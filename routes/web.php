@@ -11,4 +11,4 @@ Route::get('/isLogin','LoginController@isLogin')->name('isLogin');
 //ユーザー登録画面
 Route::get('/register', 'LoginController@register')->name('register');
 //ユーザー登録処置
-Route::post('/update', 'LoginController@update')->name('update');
+Route::post('/store', 'LoginController@update')->name('store');
