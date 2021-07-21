@@ -20,8 +20,8 @@ class LoginController extends Controller
     /**
    * ユーザー登録画面へ遷移
    */
-    public function register(){
-        return view('register');
+    public function showRegister(){
+        return view('showRegister');
     }
 
     /**
@@ -52,7 +52,7 @@ class LoginController extends Controller
    * @param string $name,$email,$password
    * @return void
    */
-    public static function update(UserRequest $request){
+    public static function store(UserRequest $request){
         $inputs = $request->all();
         \DB::beginTransaction();
         try {

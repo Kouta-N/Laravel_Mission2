@@ -8,7 +8,7 @@
         <div style="display:flex">@yield('title')
         <span style="margin-left:auto">
             <a href="{{ url('/login') }}"><button>Login</button></a>
-            <a href="{{ url('/register') }}"><button>Register</button></a>
+            <a href="{{ url('/showRegister') }}"><button>Register</button></a>
         </span>
         </div>
         <hr>

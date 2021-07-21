@@ -9,6 +9,6 @@ Route::post('/exeLogin','LoginController@exeLogin')->name('exeLogin');
 //ログイン後の画面
 Route::get('/isLogin','LoginController@isLogin')->name('isLogin');
 //ユーザー登録画面
-Route::get('/register', 'LoginController@register')->name('register');
+Route::get('/showRegister', 'LoginController@showRegister')->name('showRegister');
 //ユーザー登録処置
-Route::post('/store', 'LoginController@update')->name('store');
+Route::post('/register', 'LoginController@store')->name('register');

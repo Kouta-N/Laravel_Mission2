@@ -3,7 +3,7 @@
 @section('title','Login')
 
 @section('content')
-  <form method="POST" action="{{ route('store') }}" onsubmit="return checkPassword()">
+  <form method="POST" action="{{ route('register') }}" onsubmit="return checkPassword()">
     @csrf
      <div>
         <label for="name">Name: </label> <input type="text" name="name" value="{{ old('name') }}">
